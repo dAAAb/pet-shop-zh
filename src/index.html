@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:image" content="https://cryptoseafood.com/images/CRYPTOSEAFOOD-OG3.png">
+    <meta property="og:image" content="https://cryptoseafood.com/images/CRYPTOSEAFOOD-OG-zh.png">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>CryptoSeafood</title>
 
@@ -19,7 +19,7 @@
     <![endif]-->
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
     <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
-    <!--美咲フォント使用-->
+    <!--美咲フォント使用 / font-family:'misakigothic'-->
     <style type="text/css">
       @font-face {
       font-family:'misakigothic';
@@ -35,16 +35,21 @@
     </style>
       
   </head>
-  <body style="font-family:'misakigothic'">
+  <body style="font-family:'misakigothic'" onclick="playCoin()">
     <div class="container">
       <div class="row" style="margin-top: 20px">
         <div class="col-xs-12 col-sm-8 col-sm-push-2">
-          <h1 class="text-center" style="font-size: 34px;">CryptoSeafood</h1>
+          <h1 class="text-center" style="font-size: 34px;font-family:'misakigothic'">CryptoSeafood</h1>
           <hr/>
           <br/>
         </div>
       </div>
-
+      <div class="row" style="padding-left: 15px;padding-right: 15px;">
+         <div class="col-xs-12 col-sm-12 nes-container with-title is-centered" style="margin-bottom: 30px;">
+          <p class="title" style="font-size: 18px;top: -10px;position: relative;font-weight: bolder">感恩 Seafood，讚嘆 Seafood！</p>
+          <p>依據當前價格付出以太幣對師父進行讚嘆，順利付款後，You的讚嘆就會上鏈並顯示成為該師父旗下知名成功人士。下一位讚嘆者須付出比上次更高（20%）的價格才能再次讚嘆，因此越早讚嘆越合算Yo。</p>
+        </div>
+      </div>
       <div id="petsRow" class="row">
         <div id="petTemplate" style="display: none;">
           <div class="col-sm-6 col-md-4 col-lg-3">
@@ -71,8 +76,15 @@
         </div>
       </div>
     </div>
-
-    
+    <div class="col-xs-12 col-sm-12" style="margin-bottom: 30px;text-align: center">
+      <footer>
+        <p>
+        <span>©2019</span> <a href="https://kuroeveryday.blogspot.com/" target="_blank" rel="noopener">CryptoSeafood</a> 
+        <span>-</span> <a href="https://twitter.com/bc_rikko" target="_blank" rel="noopener">@NES.css</a>
+        </p>
+      </footer>
+    </div>
+   
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -86,6 +98,87 @@
      $(document).ready(function() {
       atvImg();
      }); 
+      //  =============================
+      //  === AUDIO BITS AND PIECES ===
+      //  =============================
+
+      var audio = new Audio(), //generic audio object for testing
+        canPlayOgg = !!audio.canPlayType && audio.canPlayType('audio/ogg; codecs="vorbis"') !== "",
+        canPlayMP3 = !!audio.canPlayType && audio.canPlayType('audio/mp3') !== "",
+
+        //setup audio elements to embed in page,
+        audioObjects = [],
+        audioSelectTheme,
+        audioWorldTheme,
+        audioNewWorld,
+        mapTravel,
+        levelBegin,
+        audioMarioJump,
+        audioFlight,
+        audioCoin,
+        audioBump,
+        audioStomp,
+        audioKick,
+        audioTailSpin,
+        audioMushroom,
+        audioPowerUp,
+        audioRacoon;
+
+
+        audioSelectTheme = createAudio("https://s3-us-west-2.amazonaws.com/s.cdpn.io/12207/smb3-world-map", true);
+        audioWorldTheme = createAudio("https://s3-us-west-2.amazonaws.com/s.cdpn.io/12207/smb3-overworld-1", true);
+        audioNewWorld = createAudio("https://s3-us-west-2.amazonaws.com/s.cdpn.io/12207/smb3_map_new_world");
+        mapTravel = createAudio("https://s3-us-west-2.amazonaws.com/s.cdpn.io/12207/smb3_map_travel");
+        levelBegin = createAudio("https://s3-us-west-2.amazonaws.com/s.cdpn.io/12207/smb3_enter_level");
+        audioMarioJump = createAudio("https://s3-us-west-2.amazonaws.com/s.cdpn.io/12207/smb3_jump");
+        audioFlight = createAudio("https://s3-us-west-2.amazonaws.com/s.cdpn.io/12207/smb3_pmeter");
+        audioCoin = createAudio("https://s3-us-west-2.amazonaws.com/s.cdpn.io/12207/smb3_coin");
+        audioBump = createAudio("https://s3-us-west-2.amazonaws.com/s.cdpn.io/12207/smb3_bump");
+        audioStomp = createAudio("https://s3-us-west-2.amazonaws.com/s.cdpn.io/12207/smb3_stomp");
+        audioKick = createAudio("https://s3-us-west-2.amazonaws.com/s.cdpn.io/12207/smb3_kick");
+        audioTailSpin = createAudio("https://s3-us-west-2.amazonaws.com/s.cdpn.io/12207/smb3_tail");
+        audioMushroom = createAudio("https://s3-us-west-2.amazonaws.com/s.cdpn.io/12207/smb3_mushroom_appears");
+        audioPowerUp = createAudio("https://s3-us-west-2.amazonaws.com/s.cdpn.io/12207/smb3_power-up");
+
+      audioSelectTheme.play();
+
+      //generic function to create all new audio elements equal, with preload
+      function createAudio (audioFile, loopSet) {
+        var tempAudio = new Audio(),
+          audioExt;
+
+        if (canPlayMP3) {
+          audioExt = '.mp3';
+        } else if (canPlayOgg) {
+          audioExt = '.ogg';
+        }
+
+        tempAudio.setAttribute('src', audioFile + audioExt);
+        tempAudio.preload = 'auto';
+        tempAudio.loop = (loopSet === true ? true : false);
+
+        return tempAudio;
+      }
+      function marioFlatSound() {
+			//play movement sound, delay by 200ms, then play again
+			mapTravel.play();
+			window.setTimeout(function () { mapTravel.currentTime = 0.01; }, 200);
+      }
+      marioFlatSound();
+      //coin
+      var coin = document.querySelectorAll('.coin');
+      var i, coinLength = coin.length;
+      for (i = 0; i < coinLength; i++) {
+        coin[i].addEventListener('animationstart', playCoin);
+        coin[i].addEventListener('webkitAnimationStart', playCoin);
+      }
+      function playCoin() {
+        if (!audioCoin.paused) {
+          audioCoin.currentTime = 0.01;
+        } else {
+          audioCoin.play();
+        }
+      }
     </script>
   </body>
 </html>
