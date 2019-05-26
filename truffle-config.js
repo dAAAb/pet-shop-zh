@@ -1,7 +1,7 @@
 var HDWalletProvider = require("truffle-hdwallet-provider"); 
 
 // infura 注册后获取的api-key
-var infura_apikey = "6ecbb277c11843cdbbad22b4d37f89ff";
+var infura_apikey = "";
 
 // 你的以太坊钱包地址 進入 MetaMask -> Settings -> reveal seed words 复制到这里
 var mnemonic = ""; 
