@@ -135,6 +135,12 @@
         <span>©2019</span> <a href="https://kuroeveryday.blogspot.com/" target="_blank" rel="noopener">CryptoSeafood</a> 
         <span>-</span> <a href="https://twitter.com/bc_rikko" target="_blank" rel="noopener">@NES.css</a>
         </p>
+        <a href="#" class="nes-badge">
+            <span class="is-primary" style="left: 0px;">中文</span>
+        </a>
+        <a href="https://cryptoseafood.com" class="nes-badge">
+            <span class="is-success" style="left: 0px;">ENG</span>
+        </a>              
       </footer>
     </div>
    
@@ -161,38 +167,26 @@
 
         //setup audio elements to embed in page,
         audioObjects = [],
-        audioSelectTheme,
-        audioWorldTheme,
-        audioNewWorld,
-        mapTravel,
-        levelBegin,
-        audioMarioJump,
-        audioFlight,
-        audioCoin,
-        audioBump,
-        audioStomp,
-        audioKick,
-        audioTailSpin,
-        audioMushroom,
-        audioPowerUp,
-        audioRacoon;
+	        audioSelectTheme,
+	        mapTravel,
+	        audioCoin;
 
 
         audioSelectTheme = createAudio("https://s3-us-west-2.amazonaws.com/s.cdpn.io/12207/smb3-world-map", true);
-        audioWorldTheme = createAudio("https://s3-us-west-2.amazonaws.com/s.cdpn.io/12207/smb3-overworld-1", true);
-        audioNewWorld = createAudio("https://s3-us-west-2.amazonaws.com/s.cdpn.io/12207/smb3_map_new_world");
-        mapTravel = createAudio("https://s3-us-west-2.amazonaws.com/s.cdpn.io/12207/smb3_map_travel");
-        levelBegin = createAudio("https://s3-us-west-2.amazonaws.com/s.cdpn.io/12207/smb3_enter_level");
-        audioMarioJump = createAudio("https://s3-us-west-2.amazonaws.com/s.cdpn.io/12207/smb3_jump");
-        audioFlight = createAudio("https://s3-us-west-2.amazonaws.com/s.cdpn.io/12207/smb3_pmeter");
-        audioCoin = createAudio("https://s3-us-west-2.amazonaws.com/s.cdpn.io/12207/smb3_coin");
-        audioBump = createAudio("https://s3-us-west-2.amazonaws.com/s.cdpn.io/12207/smb3_bump");
-        audioStomp = createAudio("https://s3-us-west-2.amazonaws.com/s.cdpn.io/12207/smb3_stomp");
-        audioKick = createAudio("https://s3-us-west-2.amazonaws.com/s.cdpn.io/12207/smb3_kick");
-        audioTailSpin = createAudio("https://s3-us-west-2.amazonaws.com/s.cdpn.io/12207/smb3_tail");
-        audioMushroom = createAudio("https://s3-us-west-2.amazonaws.com/s.cdpn.io/12207/smb3_mushroom_appears");
-        audioPowerUp = createAudio("https://s3-us-west-2.amazonaws.com/s.cdpn.io/12207/smb3_power-up");
-
+	        //audioWorldTheme = createAudio("https://s3-us-west-2.amazonaws.com/s.cdpn.io/12207/smb3-overworld-1", true);
+	        //audioNewWorld = createAudio("https://s3-us-west-2.amazonaws.com/s.cdpn.io/12207/smb3_map_new_world");
+	        mapTravel = createAudio("https://s3-us-west-2.amazonaws.com/s.cdpn.io/12207/smb3_map_travel");
+	        //levelBegin = createAudio("https://s3-us-west-2.amazonaws.com/s.cdpn.io/12207/smb3_enter_level");
+	        //audioMarioJump = createAudio("https://s3-us-west-2.amazonaws.com/s.cdpn.io/12207/smb3_jump");
+	        //audioFlight = createAudio("https://s3-us-west-2.amazonaws.com/s.cdpn.io/12207/smb3_pmeter");
+	        audioCoin = createAudio("https://s3-us-west-2.amazonaws.com/s.cdpn.io/12207/smb3_coin");
+	        //audioBump = createAudio("https://s3-us-west-2.amazonaws.com/s.cdpn.io/12207/smb3_bump");
+	        //audioStomp = createAudio("https://s3-us-west-2.amazonaws.com/s.cdpn.io/12207/smb3_stomp");
+	        //audioKick = createAudio("https://s3-us-west-2.amazonaws.com/s.cdpn.io/12207/smb3_kick");
+	        //audioTailSpin = createAudio("https://s3-us-west-2.amazonaws.com/s.cdpn.io/12207/smb3_tail");
+	        //audioMushroom = createAudio("https://s3-us-west-2.amazonaws.com/s.cdpn.io/12207/smb3_mushroom_appears");
+          //audioPowerUp = createAudio("https://s3-us-west-2.amazonaws.com/s.cdpn.io/12207/smb3_power-up");
+          
       audioSelectTheme.play();
 
       //generic function to create all new audio elements equal, with preload
