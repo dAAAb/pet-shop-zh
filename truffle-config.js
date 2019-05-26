@@ -4,7 +4,7 @@ var HDWalletProvider = require("truffle-hdwallet-provider");
 var infura_apikey = "6ecbb277c11843cdbbad22b4d37f89ff";
 
 // 你的以太坊钱包地址 進入 MetaMask -> Settings -> reveal seed words 复制到这里
-var mnemonic = "knife disease boat aunt annual festival element tribe anxiety enable orbit ritual"; 
+var mnemonic = ""; 
 
 module.exports = {
   networks: {
