@@ -1,0 +1,130 @@
+[
+  {
+    "id": 0,
+    "name": "宇宙韓國瑜",
+    "picture": "images/the-hky.jpeg",
+    "age": 61,
+    "breed": "發大財！",
+    "location": "愛情摩天輪"
+  },
+  {
+    "id": 1,
+    "name": "感恩師父",
+    "picture": "images/gan-seafood.jpeg",
+    "age": 69,
+    "breed": "王八蛋",
+    "location": "業力引爆"
+  },
+  {
+    "id": 2,
+    "name": "夢遺大師",
+    "picture": "images/dream-lost.jpeg",
+    "age": 56,
+    "breed": "阿彌陀佛",
+    "location": "肉身漂浮"
+  },
+  {
+    "id": 3,
+    "name": "幸福科學家",
+    "picture": "images/big-river-big-law.jpg",
+    "age": 62,
+    "breed": "用愛超越",
+    "location": "靈體對話"
+  },
+  {
+    "id": 4,
+    "name": "莊園大師",
+    "picture": "images/pretend-tobe-round.jpg",
+    "age": 60,
+    "breed": "別對我有邪念！",
+    "location": "佛舞"
+  },
+  {
+    "id": 5,
+    "name": "妙天種子",
+    "picture": "images/wonderful-day.jpeg",
+    "age": 85,
+    "breed": "地球佛國，人人作佛",
+    "location": "宇宙生命之光"
+  },
+  {
+    "id": 6,
+    "name": "宋7力",
+    "picture": "images/sung-chilly.jpg",
+    "age": 70,
+    "breed": "Give me Seven",
+    "location": "分身大法"
+  },
+  {
+    "id": 7,
+    "name": "24小時無上師",
+    "picture": "images/clearwater-notop.jpg",
+    "age": 68,
+    "breed": "No Meat, Please",
+    "location": "動物之愛"
+  },
+  {
+    "id": 8,
+    "name": "韓總統",
+    "picture": "images/the-hky2.jpeg",
+    "age": 61,
+    "breed": "人出去，錢進來",
+    "location": "在高雄辦公"
+  },
+  {
+    "id": 9,
+    "name": "妙天種子",
+    "picture": "images/wonderful-day2.jpeg",
+    "age": 85,
+    "breed": "妙蟬只學一半",
+    "location": "宇宙大覺之術"
+  },
+  {
+    "id": 10,
+    "name": "夢遺大師",
+    "picture": "images/dream-lost2.jpeg",
+    "age": 56,
+    "breed": "問世間情為何物",
+    "location": "解毒"
+  },
+  {
+    "id": 11,
+    "name": "讚嘆師父",
+    "picture": "images/gan-seafood2.jpeg",
+    "age": 69,
+    "breed": "不可妖言惑眾",
+    "location": "子宮頸雙修"
+  },
+  {
+    "id": 12,
+    "name": "青海無上師",
+    "picture": "images/clearwater-notop2.jpg",
+    "age": 68,
+    "breed": "即刻開悟",
+    "location": "觀音法門"
+  },
+  {
+    "id": 13,
+    "name": "🕺 Master",
+    "picture": "images/pretend-tobe-round2.gif",
+    "age": 60,
+    "breed": "謗佛者死",
+    "location": "秀麗佛舞"
+  },
+  {
+    "id": 14,
+    "name": "Sung 🌶",
+    "picture": "images/sung-chilly2.jpg",
+    "age": 70,
+    "breed": "大宇宙光明體",
+    "location": "定身術"
+  },
+  {
+    "id": 15,
+    "name": "幸福科學家",
+    "picture": "images/big-river-big-law2.jpg",
+    "age": 62,
+    "breed": "用愛超越",
+    "location": "守護靈大法"
+  }
+]

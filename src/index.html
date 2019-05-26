@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:image" content="https://cryptoseafood.com/images/CRYPTOSEAFOOD-OG3.png">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>CryptoSeafood</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/atvImg.css" rel="stylesheet" type="text/css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+    <!--美咲フォント使用-->
+    <style type="text/css">
+      @font-face {
+      font-family:'misakigothic';
+      src: url('fonts/misaki_gothic.eot');
+      src: url('fonts/misaki_gothic.woff') format('woff'),
+      url('fonts/misaki_gothic.ttf') format('truetype');
+      }
+      
+      .misaki {
+      font-family:'misakigothic';
+      font-size:16px;
+      }
+    </style>
+      
+  </head>
+  <body style="font-family:'misakigothic'">
+    <div class="container">
+      <div class="row" style="margin-top: 20px">
+        <div class="col-xs-12 col-sm-8 col-sm-push-2">
+          <h1 class="text-center" style="font-size: 34px;">CryptoSeafood</h1>
+          <hr/>
+          <br/>
+        </div>
+      </div>
+
+      <div id="petsRow" class="row">
+        <div id="petTemplate" style="display: none;">
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="nes-container with-title panel panel-default panel-pet" style="height: 580px">
+              <div class="title" style="top: 10px;position: absolute">
+                <h3 class="panel-title" style="font-size: 20px">Scrappy</h3>
+              </div>
+              <div class="panel-body" style="font-size: 16px">
+                <div class="atvImg">
+                
+                <div class="atvImg-layer" data-img="/images/back.png"></div>
+                <div class="atvImg-layer" data-img="/images/front.png"></div>
+                </div>
+                <br/><br/>
+                <!-- <strong>Quote</strong>: <span class="pet-breed">-</span><br/><br/> -->
+                <!-- <strong>年齡</strong>: <span class="pet-age">-</span><br/><br/>-->
+                <strong>特殊能力</strong>: <span class="pet-location">-</span><br/><br/>
+                <strong>價格</strong>: <span class="pet-price">-</span><br/><br/>
+                <strong>成功人士</strong>: <span class="pet-owner">-</span><br/><br/>
+                <button class="btn btn-default btn-adopt nes-btn is-primary" type="button" data-id="0" style="position: absolute; bottom:20px; width:68%; font-size: 20px">感恩讚嘆</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/atvImg.js"></script>
+    <script>
+     $(document).ready(function() {
+      atvImg();
+     }); 
+    </script>
+  </body>
+</html>
