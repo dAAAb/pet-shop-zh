@@ -42,6 +42,9 @@ App = {
     }
     // If no injected web3 instance is detected, fall back to Ganache
     else {
+      //MetaMask alert
+      alert('咦？無法連結您的虛擬貨幣錢包。建議使用 Google Chrome 安裝 MetaMask 外掛後再回來！點選「確認」進行離鏈遊玩。', null, null);
+      $('.container').find('.github-link').attr('class', 'github-link active');
       App.web3Provider = new Web3.providers.HttpProvider('https://mainnet.infura.io/');
       //App.web3Provider = new Web3.providers.HttpProvider('https://ropsten.infura.io/');
     }
