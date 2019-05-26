@@ -1,6 +1,26 @@
-# pet-shop-zh
+# pet-shop-zh 增加 CryptoSeafood 中文版筆記
 
-# 增加 CryptoSeafood 中文版筆記
+## 8bit 漢字/中文字體
+使用 8×8 ドット日本語フォント「美咲フォント」
+http://littlelimit.net/misaki.htm#download
+
+```
+<style type="text/css">
+@font-face {
+font-family:'misakigothic';
+src: url('misaki_gothic.eot');
+src: url('misaki_gothic.woff') format('woff'),
+url('misaki_gothic.ttf') format('truetype');
+}
+
+.misaki {
+font-family:'misakigothic';
+font-size:16px;
+}
+</style>
+```
+主要參考這篇
+https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11155829391 
 
 ## Solidity Withdraw by Owner 
 記得要先在 construct function 裡面指定 owner
